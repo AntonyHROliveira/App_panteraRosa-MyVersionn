@@ -2,8 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-//import drawer
-// import DrawerNavigator from '../navigation/DrawerNavigator';
+
 
 //import screens
 import Splash from '@/screens/splash';
@@ -39,27 +38,15 @@ import Estorno from '@/screens/estorno';
 
 
 
-//criacao de navegador de pilhas
+
 const Stack = createStackNavigator();
 
 
 
-// const App = () => {   // definicao padrao especialemnte se nao esta usando Typescript
-const App: React.FC = () => {   // definicao explicita do componente FC em Typescript
+
+const App: React.FC = () => {   
   return (
-//     <NavigationContainer>
-//       <DrawerNavigator />
-//       <MainStackNavigator />
-//     </NavigationContainer>
-//   );
-// };
 
-
-
-//   //configuração do Stack Navigator
-// function MainStackNavigator() {
-//   return (
-    // <NavigationContainer>
     <Stack.Navigator initialRouteName="Splash">
       <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="Home" component={Home} />
@@ -91,28 +78,12 @@ const App: React.FC = () => {   // definicao explicita do componente FC em Types
       <Stack.Screen name="CorpoEBanho" component={CorpoEBanho} />
 
     </Stack.Navigator>
-    // </NavigationContainer>
+   
 
   );
 };
 
-// function DrawerNavigator(){    // menu de gavetas
-//   return(
-//       //  <NavigationContainer>
-//       <Drawer.Navigator initialRouteName="Home">
-//           {/* Navegação principal com o Stack Navigator */}
-//           <Drawer.Screen name="Home" component={MainStackNavigator} />
-//           <Drawer.Screen name="Cabelos" component={Cabelos} />
-//           <Drawer.Screen name="Maquiagem" component={Maquiagem} />
-//           <Drawer.Screen name="Perfume" component={Perfume} />
-//           <Drawer.Screen name="SkinCare" component={SkinCare} />
-//           <Drawer.Screen name="Unha" component={Unha} />
-//           <Drawer.Screen name="CorpoEBanho" component={CorpoEBanho} />
-//           <Drawer.Screen name="Politica" component={Politica} />         
-//       </Drawer.Navigator>
-//       //  </NavigationContainer>
-//   );
-// }
+
 
 
 export default App;
