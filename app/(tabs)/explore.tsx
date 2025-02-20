@@ -17,8 +17,8 @@ function
 
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Impordando os arquivos da pasta "@/components/":
-================================================
+Impordando os arquivos da pasta "@/components/" & "@/components/ui":
+====================================================================
 import { Collapsible } from "@/components/Collapsible";
 import { ExternalLink } from "@/components/ExternalLink";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
@@ -61,9 +61,8 @@ function
 >> Definindo o componente funcional (TabTwoScreen), que será exportado como padrão;
 ===================================================================================
 export default function TabTwoScreen() {
-  return (
->> Tags de reiderização dos arquivos importados da pasta "@/components/";
--------------------------------------------------------------------------
+  return ( => *(Criando as Tags dos arquivos importados da pasta "@/components/" & "@/components/ui")*
+    
     <ParallaxScrollView 
       headerBackgroundColor={{ light: "#D0D0D0", dark: "#353636" }}
       headerImage={
@@ -207,21 +206,44 @@ function
 <Note>
 DESCRIÇÃO:
 ¨¨¨¨¨¨¨¨¨¨
-  Tag => <ParallaxScrollView/>: Componente que envolve o conteúdo da tela e aplica um efeito de parallax da biblioteca { ParallaxScrollView };
-      -> headerBackgroundColor={{}}: Define a cor de fundo do cabeçalho para os temas {{light: "#D0D0D0", dark: "#353636"}} das bibliotecas { ThemedView, ThemedText };
-      -> headerImage={}: Define a imagem do cabeçalho usando o componente <IconSymbol/>;
-      -> <IconSymbol/>: Tag que exibe ícones da biblioteca { IconSymbol };
-        >> size={310}: Define o tamanho da imagem do ícone;
-        >> color="#808080": Define a cor do ícone;
-        >> name="chevron.left.forwardslash.chevron.right": Define o nome do ícone;
-        >> style={styles.headerImage}: Define o estilo da imagem do ícone;
+[(1º)Tag] == < ParallaxScrollView : = *( COMPONENTE PRINCIPAL: que envolve o conteúdo da tela e criar um efeito de rolagem em parallax, onde o fundo se move a uma velocidade diferente do conteúdo em primeiro plano. Isso proporciona uma experiência visual dinâmica e envolvente.)*;
+                (Props) == headerBackgroundColor={{}}: *( Define a cor de fundo do cabeçalho para ter diferentes cores dependendo do tema (claro ou escuro). {{light: "#D0D0D0", dark: "#353636"}} )*;
+                (Props) == headerImage={}: Define a imagem que será exibida na área do cabeçalho passando o componente da página={IconSymbol} como imagem do cabeçalho;
+    [(1º)Tag] == <IconSymbol  Tag que exibe ícones;
+                    == size={310}: Define o tamanho da imagem do ícone;
+                    == color="#808080": Define a cor do ícone;
+                    == name="chevron.left.forwardslash.chevron.right": Define o nome do ícone;
+                    == style={styles.headerImage}: Define o estilo da imagem do ícone;
+                />
 
-  Tag => <ThemedView>: Um container com tema aplicado e conteúdo;
-          -> style={styles.titleContainer}: Aplica o estilo titleContainer definido no StyleSheet;
-          -> <ThemedText>: Tag que exibe o texto "Explore" com tema aplicado;
-  
-        </ThemedView>
+    [(1°)Tag] == <ThemedView>: Um container com tema aplicado e conteúdo;
+                    == style={styles.titleContainer}: Aplica o estilo titleContainer definido no StyleSheet;
+                    == <ThemedText>: Exibe o texto "Explore" com o type de estilo "title";
+                  </ThemedView>
+
+    [(2º)Tag] == <ThemedText> 
+                    == Exibe um texto explicativo sobre o propósito do aplicativo;
+                  </ThemedText>
+
+    [(1º)Tag] == <Collapsible title="File-based routing"> == * Um componente que permite expandir e minimizar conteúdo *;
+                             [(3º)Tag] == <ThemedText> : Exibe o texto
+                                            (conteúdo) == This app has two screens:{" "} : Explica que o aplicativo tem duas telas;
+                                    
+                                          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText>{" "}
+                  and{" "}
+                  <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+                </ThemedText>
+                <ThemedText>
+                  The layout file in{" "}
+                  <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{" "}
+                  sets up the tab navigator.
+                </ThemedText>
+                <ExternalLink href="https://docs.expo.dev/router/introduction">
+                  <ThemedText type="link">Learn more</ThemedText>
+                </ExternalLink>
+              </Collapsible>
+          />
          
-         -> 
+          
 </Note>
 -------------
