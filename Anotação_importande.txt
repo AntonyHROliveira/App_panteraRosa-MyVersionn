@@ -1,0 +1,54 @@
+  << IMPORTAÇÃO DE COMPONETES PRINCIPAS PARA OUTROS ARQUIVO >>
+==============================================================
+
+>> EXEMPLO de CASO:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+Localização dos arquivos:
+=> ARQUIVO: components/ParallaxScrollView.tsx
+=> IMPORDADO PARA : app/(Tabs)/explore.tsx
+-----------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+>> EXPLICAÇÃO:
+==============
+
+-> Quando você cria um componente em React Native (ou React em geral) e o importa em outro arquivo, 
+a tag que você usa para renderizar esse componente (neste caso, <ParallaxScrollView />) é uma forma de instanciar e renderizar esse componente na interface do usuário.
+
+
+
+>> Definição do Componente:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+ => Quando você define o componente ParallaxScrollView com export default function ParallaxScrollView({}) { ... },
+  você está criando uma função que retorna um JSX (JavaScript XML) que representa a interface do seu componente. 
+  Essa função pode receber props (propriedades) que podem ser usadas para personalizar o comportamento ou a aparência do componente.
+
+
+
+
+>> Importação do Componente:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+ => Ao importar o componente com import ParallaxScrollView from "@/components/ParallaxScrollView";
+  você está trazendo a definição do componente para o arquivo atual. 
+  O caminho @/components/ParallaxScrollView é uma forma de referenciar o arquivo onde o componente está definido, 
+  e o símbolo @ geralmente é usado em projetos que configuram aliases para facilitar a importação de módulos.
+
+
+
+
+>> Uso do Componente:
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+ => Quando você usa a tag <ParallaxScrollView />, você está instanciando o componente. 
+  O React (ou React Native) irá chamar a função ParallaxScrollView, e o que essa função retornar será renderizado na tela. 
+  Se você não passar props, o componente será renderizado com os valores padrão definidos dentro dele.
+
+
+
+
+>> Renderização: 
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+ => O React cuida da renderização do componente, atualizando a interface do usuário sempre que o estado ou as props mudarem.
+  Isso significa que, se o componente ParallaxScrollView tiver algum estado interno ou receber props que mudam, ele será re-renderizado automaticamente.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

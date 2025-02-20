@@ -47,8 +47,8 @@ const Stack = createStackNavigator(); <= Cria uma instância do navegador em pil
 
 
 
-<< Criando as rotas para as telas >> 
-====================================
+<< Criando as rotas para as telas no componente principal >> 
+============================================================
   -----------------------------------------------------------------------------------------------------------------------------------------------------
    DESCRIÇÃO da tipagem React.FC :
     => O tipo React.FC é uma forma de tipar componentes que retornam JSX.
