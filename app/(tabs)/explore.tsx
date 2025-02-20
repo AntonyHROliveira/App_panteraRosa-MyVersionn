@@ -5,17 +5,9 @@
 >> Importando a biblioteca necessária 
 ======================================
 import { StyleSheet, Image, Platform } from "react-native";
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-function 
-<Note>
->> DESCRIÇÃO:
-¨¨¨¨¨¨¨¨¨¨¨¨¨¨
- => StyleSheet: É usado para criar estilos em React Native;
- => Image: É usado para exibir imagens em React Native;
- => Platform: É usado para verificar a plataforma em que o aplicativo está sendo executado;
-</Note>
 
- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Impordando os arquivos da pasta "@/components/" & "@/components/ui":
 ====================================================================
@@ -25,37 +17,8 @@ import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { IconSymbol } from "@/components/ui/IconSymbol";
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-export default function Note () {
-  return ();
-};
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-function
-<Note>
->> DESCRIÇÃO:
-¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-  => {Collapsible}: É um componente que permite (expandir/recolher) as seções de conteúdo;
-  => {ExternalLink}: Um componente que abre links externos;
-  => ParallaxScrollView: Um componente que cria um efeito de parallax ao rolar a tela;
-  => {ThemedText}: Um componente de texto que aplica temas (light/dark);
-  => {ThemedView}: Um componente de view que aplica temas (light/dark);
-  => {IconSymbol}: Um componente que exibe ícones;
-
->> ANOTAÇÃO; 
-¨¨¨¨¨¨¨¨¨¨¨¨¨
-=> Ao importar um componente com import você está trazendo a definição do componente para o arquivo atual. 
-</Note>
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 >> Definindo o componente funcional (TabTwoScreen), que será exportado como padrão;
@@ -177,6 +140,8 @@ export default function TabTwoScreen() {
     </ParallaxScrollView>
   );
 }
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 const styles = StyleSheet.create({
   headerImage: {
@@ -191,23 +156,52 @@ const styles = StyleSheet.create({
   },
 });
 
-
-
-------------
-function 
-<Note>
-DESCRICAO:
-
-</Note>
-------------
+############################################################################################################################################################################################################################################################################################################################################################################################
 
 ---------------
 function
 <Note>
-DESCRIÇÃO:
-¨¨¨¨¨¨¨¨¨¨
-[(1º)Tag] == < ParallaxScrollView : = *( COMPONENTE PRINCIPAL: que envolve o conteúdo da tela e criar um efeito de rolagem em parallax, onde o fundo se move a uma velocidade diferente do conteúdo em primeiro plano. Isso proporciona uma experiência visual dinâmica e envolvente.)*;
-                (Props) == headerBackgroundColor={{}}: *( Define a cor de fundo do cabeçalho para ter diferentes cores dependendo do tema (claro ou escuro). {{light: "#D0D0D0", dark: "#353636"}} )*;
+ DESCRIÇÃO do CÓDIGO: 
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+
+(import):
+ == { StyleSheet } : *( É usado para criar estilos em React Native. )*;  
+ == { Image } : *( Componente para exibir imagens. )*;
+ == { Platform } : *( Permite detectar a plataforma (iOS, Android, etc.) para aplicar comportamentos específicos. )*; 
+
+
+ => { Collapsible }: É um componente que permite (expandir/recolher) as seções de conteúdo;
+ => { ExternalLink }: Um componente que abre links externos;
+ => { ParallaxScrollView }: Um componente que cria um efeito de parallax ao rolar a tela;
+ => { ThemedText }: Um componente de texto que aplica temas (light/dark);
+ => { ThemedView }: Um componente de view que aplica temas (light/dark);
+ => { IconSymbol }: Um componente que exibe ícones;
+
+>> ANOTAÇÃO; 
+¨¨¨¨¨¨¨¨¨¨¨¨¨
+=> Ao importar um componente com import você está trazendo a definição do componente para o arquivo atual;
+
+
+
+< ParallaxScrollView ></ ParallaxScrollView >
+Type:
+ => <TAG PRINCIPAL> DO COMPONENT { ParallaxScrollView };
+
+Function: 
+  => *( Ela envolve o conteúdo da tela e criar um efeito de rolagem em parallax, onde o fundo se move a uma velocidade diferente do conteúdo em primeiro plano. Isso proporciona uma experiência visual dinâmica e envolvente. )*;
+
+Props:
+ >> headerBackgroundColor: 
+        Type: Propriedade (Props) da Tag <ParallaxScrollView>;
+        Value: Valor da (Props){{light: "#D0D0D0", dark: "#353636"}}
+
+[(1º)Tag] == <   : 
+                (Props) == 
+                  =>  que contêm :
+                    ->  == um objeto como duas propriedades em JSX;
+                    Define a cor de fundo do cabeçalho para ter diferentes cores dependendo do tema { claro, escuro } = {{light: "#D0D0D0", dark: "#353636"}} )*;
+            SIGNIFICADO das {{light: "#D0D0D0", dark: "#353636"}}
+
                 (Props) == headerImage={}: Define a imagem que será exibida na área do cabeçalho passando o componente da página={IconSymbol} como imagem do cabeçalho;
     [(1º)Tag] == <IconSymbol  Tag que exibe ícones;
                     == size={310}: Define o tamanho da imagem do ícone;
@@ -216,7 +210,7 @@ DESCRIÇÃO:
                     == style={styles.headerImage}: Define o estilo da imagem do ícone;
                 />
 
-    [(1°)Tag] == <ThemedView>: Um container com tema aplicado e conteúdo;
+    [(1°)Tag] == <<ThemedView>: Um container com tema aplicado e conteúdo;
                     == style={styles.titleContainer}: Aplica o estilo titleContainer definido no StyleSheet;
                     == <ThemedText>: Exibe o texto "Explore" com o type de estilo "title";
                   </ThemedView>
@@ -247,3 +241,24 @@ DESCRIÇÃO:
           
 </Note>
 -------------
+############################################################################################################################################################################################################################################################################################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
